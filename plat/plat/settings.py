@@ -54,6 +54,12 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+
+        # Vercel Deployment 
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    # Vercel Deployment 
+
+    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'main.middleware.force_default_language_middleware',
     'django.middleware.locale.LocaleMiddleware',
