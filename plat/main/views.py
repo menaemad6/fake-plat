@@ -387,11 +387,11 @@ def lecture(request , id):
             else:
                 if Lecture.objects.filter(id=x.lecture_id).first():
                     x.lecture_exist = True
-                    # x.save()
+                    x.save()
                     append_part = another_lectures_parts.append(x)
                 else:
                     x.lecture_exist = False
-                    # x.save()
+                    x.save()
                     append_part = another_lectures_parts.append(x)
 
 
